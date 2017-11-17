@@ -1,0 +1,1 @@
+<div class="pet_article_footer_info">Copyright(c)2015 PetShow All Rights Reserved</div>
