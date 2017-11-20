@@ -22,4 +22,9 @@ class Article extends Model
     {
         return $this->morphMany(Comment::class,'commentable');
     }
+
+    public function zans()
+    {
+        return $this->morphMany(Zan::class,'object');
+    }
 }

@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
-class CreateZansTable extends Migration
+class CreateConversationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +12,10 @@ class CreateZansTable extends Migration
      */
     public function up()
     {
-        Schema::create('zans', function (Blueprint $table) {
+        Schema::create('mc_conversations', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('object_type');
-            $table->string('object_id');
-            $table->integer('user_id');
+            $table->boolean('private')->default(true);
+            $table->text('data')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateZansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('zans');
+        Schema::drop('mc_conversations');
     }
 }

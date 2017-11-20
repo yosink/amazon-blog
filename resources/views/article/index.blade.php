@@ -25,7 +25,7 @@
 
                                     </div>
                                     <div class="am-u-sm-4 am-list-thumb">
-                                        <a href="###" class="">
+                                        <a href="{{ url('/articles/'.$article->id) }}" class="">
                                             <img src="{{ $article->cover }}" class="pet_list_one_img" alt=""/>
                                         </a>
                                     </div>

@@ -18,6 +18,8 @@
             <span class="pet_article_user_ico"><img src="/img/a1.png" alt="" class=""></span>
             <span class="pet_article_user_name">EGOIST</span>
         </h1>
+            @elseif(\Route::currentRouteName() == 'user-center')
+            <div class="pet_news_list_tag_name">小萌萌</div>
         @endif
         <div class="am-header-right am-header-nav">
             <a href="javascript:;" class="iconfont pet_head_gd_ico">&#xe600;</a>

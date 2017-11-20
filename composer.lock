@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e4859a75543d5b4b3d1058353c5cad0",
+    "content-hash": "af8f2a176a50cfa47e41c49bdaf23e65",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -856,6 +856,60 @@
                 "schedule"
             ],
             "time": "2017-01-23T04:29:33+00:00"
+        },
+        {
+            "name": "musonza/chat",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/musonza/chat.git",
+                "reference": "90a52cc54649c18a5dfeee21b62c36f4707deabc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/musonza/chat/90a52cc54649c18a5dfeee21b62c36f4707deabc.zip",
+                "reference": "90a52cc54649c18a5dfeee21b62c36f4707deabc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "^5.3",
+                "illuminate/support": "^5.3",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Musonza\\Chat\\ChatServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Musonza\\Chat\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tinashe Musonza",
+                    "email": "tinashemusonza@gmail.com"
+                }
+            ],
+            "description": "Laravel Chat Package",
+            "keywords": [
+                "chat",
+                "conversation",
+                "laravel",
+                "messaging"
+            ],
+            "time": "2017-10-23T18:09:04+00:00"
         },
         {
             "name": "nesbot/carbon",

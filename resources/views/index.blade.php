@@ -21,13 +21,13 @@
                                 </div>
                             </div>
                             <div class=" am-u-sm-8 am-list-main pet_list_one_nr">
-                                <h3 class="am-list-item-hd pet_list_one_bt"><a href="###"
+                                <h3 class="am-list-item-hd pet_list_one_bt"><a href="{{ url('articles/'.$article->id) }}"
                                                                                class="">{{ $article->title }}</a></h3>
                                 <div class="am-list-item-text pet_list_one_text">{{ str_limit($article->content) }}</div>
 
                             </div>
                             <div class="am-u-sm-4 am-list-thumb">
-                                <a href="###" class="">
+                                <a href="{{ url('articles/'.$article->id) }}" class="">
                                     <img src="{{ $article->cover }}" class="pet_list_one_img" alt=""/>
                                 </a>
                             </div>
